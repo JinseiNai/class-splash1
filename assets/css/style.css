@@ -33,6 +33,21 @@
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    width: 100%;
+}
+
+.weapon-row {
+    margin: 0;
+}
+
+.weapon-name {
+    color: white;
+}
+
+.weapon-description {
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 0;
 }
 
 .weapon {
