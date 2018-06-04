@@ -1,3 +1,4 @@
+/* Hero CSS */
 .hero {
     width: 100%;
     background: url(../images/hero-bg.png) center no-repeat;
@@ -16,20 +17,36 @@
     max-height: 150px;
 }
 
+.btn {
+    margin-top: 20px;
+}
+
+/* About Dauntless */
+.dauntless {
+    background: url(../images/embermane.jpg);
+    min-height: 800px;
+    border-top: solid 2px lightskyblue;
+    border-bottom: solid 2px lightskyblue;
+}
+
+.about-wrapper {
+    padding: 80px 0 0 80px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    width: 50%;
+}
+
+/* Main content */
 .display-4 {
     font-size: 80px;
     font-family: 'Fira Sans', sans-serif;
     color: rgb(204, 204, 204);
     margin-bottom: 0;
-    text-shadow: 5px 5px rgba(45, 45, 31, .7);
-}
-
-.btn {
-    margin-top: 20px;
+    text-shadow: 5px 8px rgba(45, 45, 31, .7);
 }
 
 .main-content {
-    background: url(../images/background.jpg) center no-repeat;
+    background: url(../images/background.jpg) center;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -42,6 +59,14 @@
 
 .weapon-name {
     color: white;
+}
+
+.weapon-name:hover {
+    text-shadow: 1px 1px 8px rgb(27, 157, 238);
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .weapon-description {
@@ -59,12 +84,8 @@
     margin-bottom: 20px;
 }
 
-.axe .weapon {
-    margin-left: 250px;
-}
-
-.pike .weapon {
-    margin-right: 250px;
+.weapon:hover {
+    border: solid 3px lightskyblue;
 }
 
 .card {
@@ -72,18 +93,47 @@
     border: none;
 }
 
+/* Footer CSS */
 .card-footer {
     text-align: center;
-    background-color: rgb(77, 77, 77)
+    background-color: rgb(50, 50, 50);
+    border-top: 2px solid lightskyblue;
 }
 
 ul li {
     display: inline-block;
-    margin: 0 10px;
 }
 
 ul li,
 p {
     color: white;
     font-size: .8em;
+}
+
+.card-footer p {
+    margin: 15px auto 0;
+    font-size: .8em;
+    color: white;
+    text-align: left;
+}
+
+.card-footer ul {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1023px) {
+    .about-wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .display-4 {
+        font-size: 50px;
+    }
+
+    .about-wrapper {
+        width: 100%;
+        padding: 40px 0 0 40px;
+    }
 }
